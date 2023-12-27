@@ -1,0 +1,412 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom css */
+
+@font-face {
+	font-family: Astone-Nouvea;
+	src: url(/typefaces/astone-nouvea.otf);
+}
+
+html {
+    font-family: helvetica, Arial, sans-serif;
+}
+
+html * {
+    /* selects everything in html ^^ using asterix */
+    box-sizing: border-box;
+}
+
+main.tamara-container {
+    /* background-color: white; */
+    width: 100%;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    color: black;
+    font-family: obviously-variable, sans-serif;
+	font-variation-settings: "ital" 0, "wdth" 150, "wght" 800;
+	font-size: 1rem;
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+div.header {
+    padding-bottom: 10rem;
+    
+    background-image: url("gif_2/tamaraCover_2.gif");
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-size: fill;
+}
+
+h1 {
+    font-family: Astone-Nouvea;
+    font-size: 18rem;
+    color: black;
+    text-align: center;
+    padding-top: 12rem;
+    margin-bottom: 3rem;
+}
+
+h3.tamara-title-subheader {
+	text-align: center;
+	font-family: input-mono, monospace;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1rem;
+	color: black;
+	margin-bottom: 0.5rem;
+}
+
+div.tamara-alignment {
+	display: flex;
+	justify-content: center;
+}
+
+.tamara-blanks {
+	color: white;
+    opacity: 0;
+}
+
+h3.tamara-title-subheaderv2 {
+	text-align: center;
+	font-family: Astone-Nouvea;
+	font-size: 3rem;
+	color: #FF00C7;
+	margin-bottom: 0.25rem;
+    margin-top: 0.5rem;
+}
+
+section.bodycopy {
+    display: block;
+    width: 50%;
+    margin: 0 25vw 0 25vw;
+
+}
+
+h4 {
+    font-family: obviously-variable, sans-serif;
+    font-variation-settings: "ital" 0, "wdth" 100, "wght" 700;
+	font-size: 1rem;
+    padding-bottom: 0.5rem;
+    color: black;
+}
+
+p {
+    font-family: input-mono, monospace;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1rem;
+    color: black; 
+    padding-bottom: 1rem;
+    line-height: 1.25rem;
+}
+
+h3.pullquote {
+    color: #FF00C7;
+    font-family: obviously-variable, sans-serif;
+    font-variation-settings: "ital" 0, "wdth" 150, "wght" 800;
+	font-size: 3.4rem;
+    padding: 3rem;
+    text-align: center;
+    width: 90vw;
+    transform: translate(-20vw);
+}
+
+h3.pullquoteline1 {
+    color: #FF00C7;
+    font-family: obviously-variable, sans-serif;
+    font-variation-settings: "ital" 0, "wdth" 150, "wght" 800;
+	font-size: 3.4rem;
+    padding: 3rem 3rem 0rem 3rem;
+    text-align: center;
+    width: 90vw;
+    transform: translate(-20vw);
+}
+
+h3.pullquoteline2 {
+    color: #FF00C7;
+    font-family: obviously-variable, sans-serif;
+    font-variation-settings: "ital" 0, "wdth" 150, "wght" 800;
+	font-size: 3.4rem;
+    padding: 0rem 3rem 3rem 3rem;
+    text-align: center;
+    width: 90vw;
+    transform: translate(-20vw);
+}
+
+div.qacontainer {
+    margin-bottom: 2rem;
+}
+
+img.onScrollImages1 {
+    position: absolute;
+    top: 100vh;
+    left: -100px;
+    bottom: 0px;
+    width: 600px;
+    z-index: -1;
+}
+
+img.onScrollImages2 {
+    position: absolute;
+    top: 223vh;
+    bottom: 0px;
+    left: 73vw;
+    right: 4vw;
+    width: 480px;
+    z-index: -1;
+}
+
+img.onScrollImages3 {
+    position: absolute;
+    top: 415vh;
+    bottom: 0px;
+    left: 10vw;
+    /* right: 4vw; */
+    width: 500px;
+    z-index: -1;
+}
+
+img.onScrollImages4 {
+    position: absolute;
+    top: 620vh;
+    bottom: 0px;
+    left: 60vw;
+    right: 4vw;
+    width: 650px;
+    z-index: -1;
+}
+
+img.onScrollImages5 {
+    position: absolute;
+    top: 785vh;
+    bottom: 0px;
+    left: 13vw;
+    /* right: 4vw; */
+    width: 300px;
+    transform: rotate(-20deg);
+    z-index: -1;
+}
+
+img.onScrollImages6 {
+    position: absolute;
+    top: 60vh;
+    bottom: 0px;
+    left: 13vw;
+    /* right: 4vw; */
+    width: 250px;
+    transform: rotate(5deg);
+    z-index: -1;
+}
+
+div.pinkQuote {
+    position: absolute;
+    top: 835vh;
+    left: 21vw;
+    background-color: #FF00C7;
+    width: 58vw;
+}
+
+div.pinkQuote2 {
+    opacity: 0;
+    background-color: white;
+    margin-bottom: 10rem;
+}
+
+h3.pinkQuote {
+    font-family: Astone-Nouvea;
+    font-size: 4rem;
+    padding: 5rem;
+    color: white;
+    text-align: center;
+}
+
+h3.pinkQuote2 {
+    font-family: Astone-Nouvea;
+    font-size: 4rem;
+    padding: 5rem;
+    color: white;
+    text-align: center;
+}
+
+@keyframes reveal {
+	from {
+		opacity: 0;
+		clip-path: inset(0% 40% 100% 20%);
+	}
+	to {
+		opacity: 1;
+		clip-path: inset(0% 0% 0% 0%);
+	}
+}
+
+.onScrollImages1 {
+    /* Create View Timeline */
+	view-timeline-name: --onScroll-image;
+	view-timeline-axis: block;
+
+	/* Attach animation, linked to the  View Timeline */
+	animation: linear reveal both;
+	animation-timeline: --onScroll-image;
+
+	/* Tweak range when effect should run*/
+	animation-range: entry 25% cover 50%;
+}
+
+.onScrollImages2 {
+    /* Create View Timeline */
+	view-timeline-name: --onScroll-image;
+	view-timeline-axis: block;
+
+	/* Attach animation, linked to the  View Timeline */
+	animation: linear reveal both;
+	animation-timeline: --onScroll-image;
+
+	/* Tweak range when effect should run*/
+	animation-range: entry 25% cover 50%;
+}
+
+@keyframes fork {
+	from {
+		opacity: 0;
+		/* clip-path: inset(0% 40% 100% 20%); */
+        scale: 0.1;
+	}
+	to {
+		opacity: 1;
+		/* clip-path: inset(0% 0% 0% 0%); */
+        scale: 1;
+	}
+}
+
+.onScrollImages3 {
+    /* Create View Timeline */
+	view-timeline-name: --onScroll-image;
+	view-timeline-axis: block;
+
+	/* Attach animation, linked to the  View Timeline */
+	animation: linear fork both;
+	animation-timeline: --onScroll-image;
+
+	/* Tweak range when effect should run*/
+	animation-range: entry 25% cover 50%;
+}
+
+.onScrollImages4 {
+    /* Create View Timeline */
+	view-timeline-name: --onScroll-image;
+	view-timeline-axis: block;
+
+	/* Attach animation, linked to the  View Timeline */
+	animation: linear reveal both;
+	animation-timeline: --onScroll-image;
+
+	/* Tweak range when effect should run*/
+	animation-range: entry 25% cover 50%;
+}
+
+.onScrollImages5 {
+    /* Create View Timeline */
+	view-timeline-name: --onScroll-image;
+	view-timeline-axis: block;
+
+	/* Attach animation, linked to the  View Timeline */
+	animation: linear reveal both;
+	animation-timeline: --onScroll-image;
+
+	/* Tweak range when effect should run*/
+	animation-range: entry 25% cover 50%;
+}
+
+@keyframes reveal2 {
+	from {
+		opacity: 0;
+		clip-path: inset(0% 0% 100% 0%);
+	}
+	to {
+		opacity: 1;
+		clip-path: inset(0% 0% 0% 0%);
+	}
+}
+
+.pullquote {
+    view-timeline-name: --onScroll-image;
+	view-timeline-axis: block;
+
+	/* Attach animation, linked to the  View Timeline */
+	animation: linear reveal2 both;
+	animation-timeline: --onScroll-image;
+
+	/* Tweak range when effect should run*/
+	animation-range: entry 18% cover 30%;
+}
+
+span.blanks {
+    opacity: 0;
+}
+
+/* div.articleContainer {
+
+} */
+
+
+
+

@@ -1,0 +1,347 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom css */
+
+@font-face {
+	font-family: Astone-Nouvea;
+	src: url(/typefaces/astone-nouvea.otf);
+}
+
+html {
+    font-family: helvetica, Arial, sans-serif;
+}
+
+html * {
+    /* selects everything in html ^^ using asterix */
+    box-sizing: border-box;
+}
+
+main.morningdew-container {
+    background-color: black;
+    width: 100%;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    color: white;
+    font-family: obviously-variable, sans-serif;
+	font-variation-settings: "ital" 0, "wdth" 150, "wght" 800;
+	font-size: 1rem;
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+div.header {
+    padding-bottom: 10rem;
+
+	background-image: url("gif_2/MDCover.gif");
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1 {
+    font-family: Astone-Nouvea;
+    font-size: 18rem;
+    color: white;
+    text-align: center;
+    padding-top: 12rem;
+    margin-bottom: 3rem;
+}
+
+h3.morningdew-title-subheader {
+	text-align: center;
+	font-family: input-mono, monospace;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1rem;
+	color: white;
+	margin-bottom: 0.5rem;
+}
+
+div.morningdew-alignment {
+	display: flex;
+	justify-content: center;
+}
+
+.morningdew-blanks {
+	color: black;
+}
+
+h3.morningdew-title-subheaderv2 {
+	text-align: center;
+	font-family: Astone-Nouvea;
+	font-size: 3rem;
+	color: #FF00C7;
+	margin-bottom: 0.5rem;
+}
+
+section.bodycopy {
+    display: block;
+    width: 50%;
+    margin: 0 25vw 0 25vw;
+
+}
+
+h4 {
+    font-family: obviously-variable, sans-serif;
+    font-variation-settings: "ital" 0, "wdth" 100, "wght" 700;
+	font-size: 1rem;
+    padding-bottom: 0.5rem;
+    color: white;
+}
+
+p {
+    font-family: input-mono, monospace;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1rem;
+    color: white; 
+    padding-bottom: 1rem;
+	line-height: 1.25rem;
+}
+
+h3.pullquote {
+    color: #FF00C7;
+    font-family: obviously-variable, sans-serif;
+    font-variation-settings: "ital" 0, "wdth" 150, "wght" 800;
+	font-size: 3.4rem;
+    padding: 3rem;
+    text-align: center;
+    width: 90vw;
+    transform: translate(-20vw);
+
+}
+
+div.qacontainer {
+    padding-bottom: 2rem;
+}
+
+img.onScrollImages1 {
+    position: absolute;
+    top: 140vh;
+    left: 0vw;
+    bottom: 0px;
+    width: 600px;
+    z-index: 0;
+}
+
+img.onScrollImages2 {
+    position: absolute;
+    top: 290vh;
+    left: 50vw;
+    bottom: 0px;
+    width: 800px;
+    z-index: 0;
+}
+
+img.onScrollImages3 {
+    position: absolute;
+    top: 400vh;
+    left: 50vw;
+    bottom: 0px;
+    width: 800px;
+    z-index: 0;
+}
+
+img.onScrollImages4 {
+    position: absolute;
+    top: 100vh;
+    left: 5vw;
+    bottom: 0px;
+    width: 500px;
+    z-index: 0;
+
+}
+
+img.onScrollImages5 {
+    position: absolute;
+    top: 120vh;
+    left: 65vw;
+    bottom: 0px;
+    width: 500px;
+    z-index: 0;
+
+}
+
+img.onScrollImages6 {
+    position: absolute;
+    top: 180vh;
+    left: 65vw;
+    bottom: 0px;
+    width: 500px;
+    z-index: 0;
+
+}
+
+img.onScrollImages7 {
+    position: absolute;
+    top: 690vh;
+    left: 0vw;
+    bottom: 0px;
+    width: 500px;
+    z-index: 0;
+
+}
+
+div.pinkQuote {
+    position: absolute;
+    top: 785vh;
+    left: 22vw;
+    background-color: #FF00C7;
+    width: 56vw;
+}
+
+div.pinkQuote2 {
+    background-color: black;
+    padding-bottom: 10rem;
+}
+
+h3.pinkQuote {
+    font-family: Astone-Nouvea;
+    font-size: 4rem;
+    padding: 5rem;
+    color: white;
+    text-align: center;
+}
+
+h3.pinkQuote2 {
+    font-family: Astone-Nouvea;
+    font-size: 4rem;
+    padding: 5rem;
+    color: white;
+    text-align: center;
+}
+
+@keyframes reveal {
+	from {
+		opacity: 0;
+		clip-path: inset(0% 40% 100% 20%);
+	}
+	to {
+		opacity: 1;
+		clip-path: inset(0% 0% 0% 0%);
+	}
+}
+
+.onScrollImages1 {
+    /* Create View Timeline */
+	view-timeline-name: --onScroll-image;
+	view-timeline-axis: block;
+
+	/* Attach animation, linked to the  View Timeline */
+	animation: linear reveal both;
+	animation-timeline: --onScroll-image;
+
+	/* Tweak range when effect should run*/
+	animation-range: entry 25% cover 50%;
+}
+
+.onScrollImages2 {
+    /* Create View Timeline */
+	view-timeline-name: --onScroll-image;
+	view-timeline-axis: block;
+
+	/* Attach animation, linked to the  View Timeline */
+	animation: linear reveal both;
+	animation-timeline: --onScroll-image;
+
+	/* Tweak range when effect should run*/
+	animation-range: entry 25% cover 50%;
+}
+
+.onScrollImages3 {
+    /* Create View Timeline */
+	view-timeline-name: --onScroll-image;
+	view-timeline-axis: block;
+
+	/* Attach animation, linked to the  View Timeline */
+	animation: linear reveal both;
+	animation-timeline: --onScroll-image;
+
+	/* Tweak range when effect should run*/
+	animation-range: entry 25% cover 50%;
+}
+
+@keyframes reveal2 {
+	from {
+		opacity: 0;
+		clip-path: inset(0% 0% 100% 0%);
+	}
+	to {
+		opacity: 1;
+		clip-path: inset(0% 0% 0% 0%);
+	}
+}
+
+.pullquote {
+    view-timeline-name: --onScroll-image;
+	view-timeline-axis: block;
+
+	/* Attach animation, linked to the  View Timeline */
+	animation: linear reveal2 both;
+	animation-timeline: --onScroll-image;
+
+	/* Tweak range when effect should run*/
+	animation-range: entry 18% cover 30%;
+}
+
+span.blanks {
+    opacity: 0;
+}
